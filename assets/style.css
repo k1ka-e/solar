@@ -1078,6 +1078,12 @@ input[placeholder]:nth-child(3) {
    transform: translate(-50%, -50%);
 }
 
+.solution {
+   margin-top: 5rem;
+}
 
+.solution__content {
+   display: flex;
+}
 
 /* tabs */
