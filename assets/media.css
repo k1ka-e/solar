@@ -1,0 +1,820 @@
+@media(max-width: 1550px) {
+   .container {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 80px;
+      margin-left: 0;
+      margin-right: 0;
+   }
+
+
+
+}
+
+
+@media(max-width: 1450px) {
+   .perspiciatis__title {
+      font-size: 55px;
+      line-height: 99%;
+   }
+
+   .perspiciatis__text {
+      font-size: 20px;
+      line-height: 146%;
+   }
+
+   .blog__title {
+      font-size: 36px;
+   }
+
+   .blog__text {
+      font-size: 22px;
+   }
+
+   .simple__title {
+      font-size: 42px;
+      line-height: 130%;
+   }
+
+   .simple__text {
+      font-size: 22px;
+      font-weight: 500;
+   }
+
+
+   .longi_imeges {
+      display: none;
+   }
+
+   .longi_serv {
+      display: grid;
+   }
+
+   .longi_title {
+      font-size: 64px;
+      line-height: 83px;
+   }
+
+   .longi_text {
+      font-size: 24px;
+      line-height: 40px;
+   }
+
+   .longi_subtitle {
+      font-size: 42px;
+      line-height: 54px;
+   }
+
+   /* .clients */
+
+   .clients {
+      padding: 75px 0;
+   }
+
+   .clients_text {
+      font-size: 24px;
+      line-height: 40px;
+   }
+
+   .portfolio_item:nth-child(4),
+   .portfolio_item:nth-child(5),
+   .portfolio_item:nth-child(6) {
+      display: none;
+   }
+
+   .portfolio_img {
+      height: 265px;
+   }
+
+   .portfolio_text {
+      font-size: 24px;
+      line-height: 38px;
+   }
+
+   /* investor _ page */
+
+   .investor_title {
+      font-size: 64px;
+      line-height: 83px;
+   }
+
+   .investor_text {
+      font-size: 24px;
+      line-height: 40px;
+   }
+
+   .investor_btn {
+      font-size: 22px;
+      line-height: 37px;
+      color: #fff;
+      text-decoration: none;
+   }
+
+}
+
+
+
+@media(max-width: 1350px) {
+   .nav__item {
+      font-size: 15px;
+   }
+
+   .perspiciatis__title {
+      font-size: 40px;
+   }
+
+   .blog__title {
+      font-size: 30px;
+   }
+
+   .blog__text {
+      font-size: 22px;
+   }
+
+   .simple__title {
+      font-size: 25px;
+      line-height: 117%;
+   }
+
+   .simple__text {
+      font-size: 18px;
+      font-weight: 500;
+   }
+
+   .simple__item>img {
+      height: 300px;
+   }
+
+   .simple__date {
+      margin-top: 18px;
+   }
+
+   .feedback {
+      padding: 80px 0;
+   }
+
+   .feedback__title {
+      font-size: 43px;
+   }
+
+
+
+
+
+   /* about_us */
+   .nature {
+      margin-top: 75;
+   }
+
+   .nature_title {
+      font-size: 64px;
+   }
+
+   .nature_text {
+      font-size: 24px;
+   }
+
+   .naure_subtitle {
+      font-size: 42px;
+   }
+
+
+
+   /*  */
+   .nature_info_text {
+      font-size: 32px;
+      line-height: 41px;
+      margin-bottom: 45px;
+   }
+
+
+   /*  worth_lg*/
+
+   .worth_lg {
+      display: none;
+   }
+
+   .worth_md {
+      display: block;
+      margin-bottom: 35px;
+   }
+
+   .worth_blog {
+      padding: 50px 0;
+   }
+
+   .worth__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+   }
+
+   /* benefits_title */
+
+   .benefits_bg {
+      padding: 75px 0;
+   }
+
+   .benefits_title {
+      font-size: 42px;
+   }
+
+   .benefits_text {
+      width: 85%;
+   }
+
+   /*  */
+
+   .structure__title {
+      font-size: 42px;
+      padding-top: 75px;
+   }
+
+}
+
+
+
+@media(max-width: 1199px) {
+   .nav {
+      display: none;
+   }
+
+   .menu {
+      display: block;
+   }
+}
+
+
+
+@media(max-width: 1100px) {
+   .container {
+      padding: 0 15px;
+   }
+}
+
+
+
+
+
+@media(max-width: 1000px) {
+
+   /* .benefits_item */
+   .benefits {
+      flex-direction: column;
+   }
+
+   .benefits_item {
+      width: 95%;
+      margin-bottom: 20px;
+   }
+
+   .benefits_switch {
+      display: none;
+   }
+
+   .benefits_item:nth-child(7) img,
+   .benefist_media_s,
+   .benefits_item:nth-child(8) img,
+   .benefits_item:nth-child(9) img {
+      display: block;
+   }
+
+   .benefits_item:nth-child(9) {
+      margin-bottom: 0;
+   }
+
+   .benefist_media_s {
+      display: flex;
+      justify-content: center;
+   }
+
+
+   /*  */
+   .nature_info_text {
+      font-size: 24px;
+   }
+
+   .nature_info {
+      flex-direction: column;
+   }
+
+   .nautre_box_img {
+      background: transparent;
+      box-shadow: none;
+   }
+
+
+   /*  */
+   .intro__title {
+      font-size: 34px;
+   }
+
+
+   .intro_blog {
+      margin-left: 22px;
+   }
+
+   .intro_btn a {
+      font-size: 18px;
+   }
+
+   .form_btn {
+      font-size: 17px;
+   }
+
+   /* about_us */
+   .nature {
+      padding-top: 50px;
+   }
+
+   .nature_text {
+      font-size: 21px;
+      line-height: 35px;
+      padding: 0 40px;
+   }
+
+   .nature_title {
+      font-size: 43px;
+      margin-bottom: 40px;
+   }
+
+   .naure_subtitle {
+      font-size: 43px;
+      line-height: 47.6px;
+   }
+
+   /*  */
+   .worth_blog {
+      flex-direction: column;
+   }
+
+   .worth__item {
+      margin-bottom: 55px;
+   }
+
+   .worth__title {
+      font-size: 43px;
+   }
+
+   .worth__text {
+      font-size: 21px;
+      line-height: 35px;
+   }
+
+   .worth__item p {
+      font-size: 24px;
+      line-height: 36px;
+   }
+
+   /*  */
+
+   .structure__title {
+      padding-top: 50px;
+      font-size: 34px;
+      line-height: 130%;
+   }
+
+   .longi_item {
+      min-height: 350px;
+   }
+
+   .clients_img img {
+      max-width: 100%;
+   }
+
+   .portfolio {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .portfolio_item {
+      background: #F7F7F7;
+   }
+
+   .portfolio_item:nth-child(4) {
+      display: block;
+   }
+
+   .portfolio_img {
+      margin-bottom: 20p;
+   }
+
+   .portfolio_img img {
+      border-radius: 24px 24px 0 0;
+   }
+
+   .portfolio_text {
+      font-size: 21px;
+      line-height: 33px;
+      padding: 0 15px;
+      margin-bottom: 30px;
+   }
+
+   .portfolio_data {
+      padding: 0 15px;
+   }
+   /*  */
+
+   .investor_blog {
+      justify-content: center;
+   }
+
+   .investor {
+      display: block;
+      margin-bottom: 0;
+   }
+
+   .investor_item {
+      margin-bottom: 50px;
+   }
+
+   .investor_btn {
+      margin-bottom: 0;
+   }
+}
+
+
+@media(max-width: 866px) {
+   .col-4 {
+      width: 100% !important;
+   }
+
+
+   .intro_blog {
+      width: 70%;
+   }
+
+   .perspiciatis__left {
+      padding: 40px 20px;
+   }
+
+   .perspiciatis__text {
+      margin-top: 40px;
+   }
+
+   .perspiciatis__data {
+      margin-top: 30px;
+   }
+
+   .blog_item:nth-child(2) {
+      display: none;
+   }
+
+   .blog {
+      grid-template-columns: 1fr;
+   }
+
+   .blog__text {
+      font-size: 21px;
+   }
+
+   .simple__item:nth-child(3) {
+      display: none;
+   }
+
+   .simple {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .simple__info {
+      padding: 15px 15px 30px 15px;
+   }
+
+   .feedback__subtitle {
+      font-size: 21px;
+   }
+
+   .footer__item {
+      font-size: 18px;
+   }
+
+   /*  */
+   .benefits_title {
+      font-size: 34px;
+   }
+
+   .benefits_bg {
+      padding-top: 0;
+   }
+
+   .worth {
+      padding-bottom: 0;
+   }
+
+   .benefits_text {
+      font-size: 21px;
+   }
+
+   /*  */
+
+   .structure img {
+      padding: 20px 0;
+      object-fit: cover;
+   }
+
+   .structure_img2 {
+      height: 720px;
+      padding: 0 !important;
+   }
+
+   .longi {
+      padding-top: 50px;
+   }
+
+
+   .longi_title {
+      margin-bottom: 40px;
+      font-size: 43px;
+      line-height: 64px;
+   }
+
+   .longi_text {
+      font-size: 21px;
+      line-height: 36px;
+      margin-bottom: 30px;
+   }
+
+   .longi_subtitle {
+      font-size: 34px;
+      line-height: 47px;
+      margin-bottom: 30px;
+   }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 625px) {
+   .form_btn {
+      font-size: 15px;
+   }
+
+   .longi_item {
+      min-height: 300px;
+   }
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 550px) {
+   .form_btn {
+      font-size: 15px;
+   }
+
+   .intro__title {
+      font-size: 32px;
+   }
+
+   .intro__text {
+      font-size: 19px;
+      line-height: 30px;
+   }
+
+   .intro_btn a {
+      width: 100%;
+      text-align: center;
+   }
+
+   .perspiciatis {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .container {
+      padding: 0;
+   }
+
+   header {
+      padding: 20px 15px !important;
+   }
+
+   .perspiciatis__right>img {
+      border-radius: 20px 20px 0px 0px;
+   }
+
+   .perspiciatis__left {
+      border-radius: 0px 0px 20px 20px;
+   }
+
+   .blog_info {
+      padding: 20px 15px 35px;
+   }
+
+   .simple__item:nth-child(2) {
+      display: none;
+   }
+
+   .simple {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .feedback__title {
+      font-size: 41px;
+      padding: 0 15px;
+   }
+
+   .feedback__subtitle {
+      font-size: 19px;
+      padding: 0 15px;
+      margin-top: 10px;
+   }
+
+   .footer {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .social {
+      margin-bottom: 10px;
+   }
+
+   .intro_blog {
+      width: 88%;
+   }
+
+
+   /* about_us */
+   .nature {
+      padding-top: 50px 15px;
+   }
+
+   .nature_bg {
+      padding: 0 15px;
+   }
+
+   .nature_text {
+      font-size: 19px;
+      line-height: 32px;
+      padding: 0 15px;
+   }
+
+   .nature_title {
+      font-size: 41px;
+      margin-bottom: 40px;
+   }
+
+   .naure_subtitle {
+      padding: 0 15px;
+      font-size: 32px;
+      line-height: 44.6px;
+   }
+
+   /*  */
+   .worth__item {
+      margin-bottom: 55px;
+   }
+
+   .worth__title {
+      font-size: 32px;
+      margin-bottom: 20px;
+   }
+
+   .worth__text {
+      font-size: 19px;
+      line-height: 32.3px;
+      padding: 0 15px;
+   }
+
+   .worth__item p {
+      font-size: 24px;
+      line-height: 36px;
+   }
+
+   /*  */
+   .benefits_title {
+      margin-bottom: 35px;
+      font-size: 32px;
+      line-height: 44px;
+   }
+
+   .benefits_text {
+      font-size: 19px;
+   }
+
+   /*  */
+
+   .structure__title {
+      font-size: 32px;
+   }
+
+   /*  */
+
+
+   .structure_img2 {
+      height: 480px;
+   }
+
+
+   /*  */
+
+   .longi_title {
+      font-size: 64px;
+      line-height: 83px;
+   }
+
+   .longi_text {
+      font-size: 24px;
+      line-height: 40px;
+   }
+
+   .longi_subtitle {
+      font-size: 42px;
+      line-height: 54px;
+   }
+
+   /*  */
+
+   .longi_serv {
+      display: flex;
+      flex-direction: column;
+      padding: 0 70px;
+   }
+
+   .longi_item {
+      min-height: 426px;
+   }
+
+   .longi_item img {
+      width: 50%;
+   }
+
+   .longi_title {
+      font-size: 41px;
+      line-height: 61px;
+   }
+
+   .longi_text {
+      padding: 0 15px;
+      line-height: 32px;
+      font-size: 19px;
+   }
+
+   .longi_subtitle {
+      font-size: 32px;
+      line-height: 44px;
+      padding: 0 15px;
+   }
+
+   
+   .portfolio {
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .portfolio_text {
+      font-size: 19px;
+   }
+
+   .portfolio_item:nth-child(3),
+   .portfolio_item:nth-child(4) {
+      display: none;
+   }
+
+   /*  */
+
+   .investor_title {
+      font-size: 41px;
+      line-height: 53px;
+      margin-bottom: 15px;
+   }
+
+   .investor_text {
+      font-size: 21px;
+      line-height: 35.7px;
+   }
+
+   .investor_btn {
+      font-size: 16px;
+      line-height: 27.2px;
+   }
+
+   .investor_item  {
+      margin-bottom: 20px;
+   }
+
+}
+
+
+
+@media(max-width: 400px) {
+   .logo img {
+      width: 150px;
+   }
+
+}
