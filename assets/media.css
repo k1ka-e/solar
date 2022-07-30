@@ -7,8 +7,6 @@
       margin-right: 0;
    }
 
-
-
 }
 
 
@@ -131,6 +129,12 @@
       font-size: 22px;
    }
 
+   /* tabs */
+   .tabcontent__img {
+      width: 700px !important;
+      height: auto !important;
+   }
+
 }
 
 
@@ -177,10 +181,6 @@
    .feedback__title {
       font-size: 43px;
    }
-
-
-
-
 
    /* about_us */
    .nature {
@@ -251,6 +251,13 @@
    .structure__title {
       font-size: 42px;
       padding-top: 75px;
+   }
+
+
+   /* tabs */
+   .tabcontent__img {
+      width: 750px !important;
+      height: auto !important;
    }
 
 }
