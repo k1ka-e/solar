@@ -121,6 +121,11 @@ header {
    color: #000000;
    line-height: 140%;
    margin-right: 25px;
+   transition: .2s linear;
+}
+.nav__item:hover{
+   text-decoration: none;
+   color: #00B259;
 }
 
 .nav__item.active {
@@ -1075,6 +1080,8 @@ input[placeholder]:nth-child(3) {
 .service_item.solution img {
    top: 50%;
    left: 50%;
+   max-width: 100%;
+   width: 75%;
    transform: translate(-50%, -50%);
 }
 
@@ -1087,3 +1094,7 @@ input[placeholder]:nth-child(3) {
 }
 
 /* tabs */
+
+
+
+/*  */

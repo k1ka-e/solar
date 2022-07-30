@@ -110,6 +110,27 @@
       text-decoration: none;
    }
 
+   .service_info {
+      width: 83%;
+   }
+
+   .service {
+      height: 600px;
+   }
+
+   .service_title {
+      font-size: 64px;
+   }
+
+   .service_text {
+      font-size: 24px;
+      line-height: 40.8px;
+   }
+
+   .service_btn {
+      font-size: 22px;
+   }
+
 }
 
 
@@ -414,6 +435,7 @@
    .portfolio_data {
       padding: 0 15px;
    }
+
    /*  */
 
    .investor_blog {
@@ -431,6 +453,26 @@
 
    .investor_btn {
       margin-bottom: 0;
+   }
+
+   /*  */
+   .service {
+      height: 500px;
+   }
+
+   .service_title {
+      font-size: 43px;
+      margin-bottom: 40px;
+   }
+
+   .service_text {
+      font-size: 21px;
+      line-height: 33.6px;
+   }
+
+   .service_btn {
+      font-size: 18px;
+      line-height: 30.6px;
    }
 }
 
@@ -561,6 +603,33 @@
    .longi_item {
       min-height: 300px;
    }
+
+   .service {
+      height: 681px;
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .service_item.solution img {
+      top: 0%;
+      left: 50%;
+      max-width: 100%;
+      width: 55%;
+      transform: translate(-50%, -115%);
+   }
+
+   .service_btn {
+      width: 100%;
+      text-align:  center;
+      margin-bottom: 35px;
+      font-size: 16px;
+   }
+
+   .service_text {
+      margin-bottom: 25px;
+      font-size: 19px;
+   }
+
 }
 
 
@@ -772,7 +841,7 @@
       padding: 0 15px;
    }
 
-   
+
    .portfolio {
       grid-template-columns: repeat(1, 1fr);
    }
@@ -804,7 +873,7 @@
       line-height: 27.2px;
    }
 
-   .investor_item  {
+   .investor_item {
       margin-bottom: 20px;
    }
 
@@ -816,5 +885,10 @@
    .logo img {
       width: 150px;
    }
+
+   .service_item.solution img {
+      width: 65%;
+      transform: translate(-50%, -118%);
+  }
 
 }
