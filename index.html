@@ -45,11 +45,22 @@
           <a href="products.html" class="nav__item">Продукция</a>
           <a href="service.html" class="nav__item">Сервисный центр</a>
           <a href="investor.html" class="nav__item">Для инвесторов</a>
-          <a href="#" class="nav__item">Контакты</a>
+          <a href="#" id="myBtn" class="nav__item">Контакты</a>
         </nav>
 
         <div class="menu__button">
-          <div class="lang">Ru</div>
+          <div class="select__wrap">
+            <select
+              class="custom__select"
+              id="select"
+              name="select"
+              placeholder="Ru"
+            >
+              <option value="option1">Ru</option>
+              <option value="option2">En</option>
+              <option value="option3">Uz</option>
+            </select>
+          </div>
           <div class="menu">
             <a class="nav__toggle" id="nav__toggle" type="button">
               <span class="nav__toggle-item">menu</span>
@@ -68,6 +79,29 @@
         <a href="service.html" class="nav__item__m">Сервисный центр</a>
         <a href="investor.html" class="nav__item__m">Для инвесторов</a>
         <a href="#" class="nav__item__m">Контакты</a>
+
+        <div class="dropdown-container">
+          <button class="dropdown-button main-button">
+            <span class="dropdown-title-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg>
+            </span>
+            <span class="dropdown-title text-truncate">Facebook</span>
+            <span class="dropdown-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+              </svg>
+            </span>
+          </button>
+          <div class="dropdown-list-container">
+            <div class="dropdown-list-wrapper">
+              <ul class="dropdown-list"></ul>
+              <div class="floating-icon" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+
       </nav>
     </div>
 
@@ -86,7 +120,10 @@
                       рынке акций класса А.
                     </div>
                     <div class="intro_btn">
-                      <a href="#">О компании</a>
+                      <a href="#">
+                        О компании
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -244,6 +281,27 @@
         </div>
       </div>
     </footer>
+
+
+
+<div id="myModal" class="modal">
+
+ 
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Шапка модального окна</h2>
+    </div>
+    <div class="modal-body">
+      <p>Какой-то текст в теле модального окна</p>
+      <p>Ещё другой текст...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Футер модального окна</h3>
+    </div>
+  </div>
+
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

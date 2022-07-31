@@ -489,6 +489,10 @@
   .tabcontent {
     text-align: center;
   }
+
+  .product__slider {
+    display: block;
+  }
 }
 
 @media (max-width: 866px) {
@@ -908,6 +912,11 @@
 
   .service_btn {
     padding: 3px;
+  }
+
+  .main {
+    width: 350px;
+    overflow: hidden;
   }
 }
 

@@ -1,12 +1,10 @@
 var swiper = new Swiper(".mySwiper", {
-   pagination: {
-     el: ".swiper-pagination",
-   },
- });
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 
-
-
- $(function () {
+$(function () {
   /* menu nav bar */
   $("#nav__toggle").on("click", function () {
     $(this).toggleClass("active");
@@ -15,10 +13,6 @@ var swiper = new Swiper(".mySwiper", {
     // $(".overlay").addClass("active");
     // $("body").css("overflow", "hidden");
   });
-
-
-  
-
 });
 
 // Accordion
@@ -44,44 +38,66 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
-
-(function($, document) {
-    
+(function ($, document) {
   // get tallest tab__content element
   let height = -1;
 
-$('.tab__content').each(function() {
-  height = height > $(this).outerHeight() ? height : $(this).outerHeight();
-     $(this).css('position', 'absolute');
-});
-  
+  $(".tab__content").each(function () {
+    height = height > $(this).outerHeight() ? height : $(this).outerHeight();
+    $(this).css("position", "absolute");
+  });
+
   // set height of tabs + top offset
-$('[data-tabs]').css('min-height', height + 40 + 'px');
-
-}(jQuery, document));
-
+  $("[data-tabs]").css("min-height", height + 40 + "px");
+})(jQuery, document);
 
 ////////////////////////////////////////////////////
 
 //slider2
 
-$('.slider-for').slick({
+$(".slider-for").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   fade: true,
-  asNavFor: '.slider-nav'
+  asNavFor: ".slider-nav",
 });
-$('.slider-nav').slick({
+$(".slider-nav").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  asNavFor: '.slider-for',
+  asNavFor: ".slider-for",
   dots: true,
-  focusOnSelect: true
+  focusOnSelect: true,
 });
 
-$('a[data-slide]').click(function(e) {
+$("a[data-slide]").click(function (e) {
   e.preventDefault();
-  var slideno = $(this).data('slide');
-  $('.slider-nav').slick('slickGoTo', slideno - 1);
+  var slideno = $(this).data("slide");
+  $(".slider-nav").slick("slickGoTo", slideno - 1);
 });
+
+// Modal
+
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+
+////////////////////////////////////
+
