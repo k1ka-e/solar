@@ -268,6 +268,11 @@
     width: 675px !important;
     height: auto !important;
   }
+
+  iframe {
+    width: 450px;
+    height: 250px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -627,6 +632,11 @@
    display: block;
   }
 
+  iframe {
+    width: 350px;
+    height: 200px;
+  }
+
 }
 
 @media (max-width: 625px) {
@@ -918,6 +928,12 @@
     width: 350px;
     overflow: hidden;
   }
+
+  iframe {
+    width: 250px;
+    height: 200px;
+  }
+
 }
 
 @media (max-width: 400px) {
