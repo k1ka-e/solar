@@ -1,12 +1,10 @@
 var swiper = new Swiper(".mySwiper", {
-   pagination: {
-     el: ".swiper-pagination",
-   },
- });
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 
-
-
- $(function () {
+$(function () {
   /* menu nav bar */
   $("#nav__toggle").on("click", function () {
     $(this).toggleClass("active");
@@ -15,17 +13,13 @@ var swiper = new Swiper(".mySwiper", {
     // $(".overlay").addClass("active");
     // $("body").css("overflow", "hidden");
   });
-
-
-  
-
 });
 
 // Accordion
 
 function openTab(evt, tabName) {
   // Declare all variables
-  var i, tabcontent, tablinks;
+  var i, tabcontent, tablinks, tablinks__radius1, tablinks__sircle;
 
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -44,3 +38,60 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
+(function ($, document) {
+  // get tallest tab__content element
+  let height = -1;
+
+  $(".tab__content").each(function () {
+    height = height > $(this).outerHeight() ? height : $(this).outerHeight();
+    $(this).css("position", "absolute");
+  });
+
+  // set height of tabs + top offset
+  $("[data-tabs]").css("min-height", height + 5 + "px");
+})(jQuery, document);
+
+////////////////////////////////////////////////////
+
+//slider2
+
+$(".slider-for").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: ".slider-nav",
+});
+$(".slider-nav").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: ".slider-for",
+  dots: true,
+  focusOnSelect: true,
+});
+
+$("a[data-slide]").click(function (e) {
+  e.preventDefault();
+  var slideno = $(this).data("slide");
+  $(".slider-nav").slick("slickGoTo", slideno - 1);
+});
+
+
+
+////////////////////////////////////
+
+const $drowdownArrow = document.querySelector('.fa-angle-down');
+const $checkbox = document.getElementById('openDropdown');
+const $dropdownMenu = document.querySelector('.dropdown-menu');
+
+$checkbox.addEventListener('change', () => {
+  $drowdownArrow.classList.toggle('rotate-dropdown-arrow');
+});
+
+$dropdownMenu.addEventListener('click', (e) => {
+  $checkbox.checked = false;
+  // setting checked to false won't trigger 'change'
+  // event, manually dispatch an event to rotate
+  // dropdown arrow icon
+  $checkbox.dispatchEvent(new Event('change'));
+});
