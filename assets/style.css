@@ -1281,6 +1281,13 @@ input[placeholder]:nth-child(3) {
 .tablinks.active {
   color: #00b259;
 }
+.tablinks.active > .tablinks__radius1 {
+   border-color: #00b259;
+}
+
+.tablinks.active > .tablinks__radius1> .tablinks__sircle {
+   background: #00b259;
+}
 
 .tabs {
   position: relative;
