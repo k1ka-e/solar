@@ -48,7 +48,7 @@
          <a href="#" class="nav__item">Контакты</a>
         </nav>
 
-        <div>
+        <div class="menu__button">
           <div class="lang">Ru</div>
           <div class="menu">
             <a class="nav__toggle" id="nav__toggle" type="button">
@@ -56,21 +56,22 @@
             </a>
           </div>
         </div>
+
       </div>
     </header>
 
     <div class="mobile_menu">
       <nav class="nav_m">
         <a href="about.html" class="nav__item__m">О нас</a>
-        <a href="#" class="nav__item__m">Решения</a>
+        <a href="solution.html" class="nav__item__m">Решения</a>
         <a href="products.html" class="nav__item__m">Продукция</a>
-        <a href="#" class="nav__item__m">Сервисный центр</a>
-        <a href="#" class="nav__item__m">Для инвесторов</a>
+        <a href="service.html" class="nav__item__m">Сервисный центр</a>
+        <a href="investor.html" class="nav__item__m">Для инвесторов</a>
         <a href="#" class="nav__item__m">Контакты</a>
       </nav>
     </div>
 
-    <section>
+    <section class="container">
       <div class="service">
         <div class="service_item">
           <div class="service_info">
@@ -78,7 +79,10 @@
             <div class="service_text">
               Мы предлагаем полный спектр услуг по установке и обслуживанию СФЭС
             </div>
-            <a class="service_btn">Связаться с нами</a>
+            <a class="service_btn">
+              Связаться с нами
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
           </div>
         </div>
         <div class="service_item">
@@ -86,6 +90,250 @@
         </div>
       </div>
     </section>
+
+
+    <section class="solution__div">
+      <div class="container">
+        <div class="solution__content service__tabs ">
+          <div class="solution__column">
+            <div class="tabs">
+              <div class="vl"></div>
+              <button
+                class="tablinks active"
+                onclick="openTab(event, 'Solar1')"
+              >
+                <div class="tablinks__radius1 active">
+                  <div class="tablinks__sircle active"></div>
+                </div>
+
+                Строительство под ключ EPC
+              </button>
+
+              <button class="tablinks" onclick="openTab(event, 'Solar2')">
+                <div class="tablinks__radius1">
+                  <div class="tablinks__sircle"></div>
+                </div>
+                Эксплуатация и обслуживание
+              </button>
+
+              <button class="tablinks" onclick="openTab(event, 'Solar3')">
+                <div class="tablinks__radius1">
+                  <div class="tablinks__sircle"></div>
+                </div>
+                Развитие
+              </button>
+
+            </div>
+            <!--tabs -->
+          </div>
+
+          <div class="solution__column__right">
+            <div style="display: block" id="Solar1" class="tabcontent">
+              <div class="tabcontent__box">
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                      Связаться
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div id="Solar2" class="tabcontent">
+              <div class="tabcontent__box">
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                      Связаться
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+                
+              </div>
+            </div>
+
+            <div id="Solar3" class="tabcontent">
+              <div class="tabcontent__box">
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                      Связаться
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+
+                <div class="tabcontent__block">
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+
+                  <a href="#" class="service_btn product__btn">
+                    Связаться
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </a>
+
+                </div>
+                
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- container -->
+    </section>
+
 
     <!-- FEEDBACK START -->
 
