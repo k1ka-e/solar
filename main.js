@@ -76,28 +76,22 @@ $("a[data-slide]").click(function (e) {
   $(".slider-nav").slick("slickGoTo", slideno - 1);
 });
 
-// Modal
-
-var modal = document.getElementById("myModal");
-
-var btn = document.getElementById("myBtn");
-
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function () {
-  modal.style.display = "block";
-};
-
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
 
 
 ////////////////////////////////////
 
+const $drowdownArrow = document.querySelector('.fa-angle-down');
+const $checkbox = document.getElementById('openDropdown');
+const $dropdownMenu = document.querySelector('.dropdown-menu');
+
+$checkbox.addEventListener('change', () => {
+  $drowdownArrow.classList.toggle('rotate-dropdown-arrow');
+});
+
+$dropdownMenu.addEventListener('click', (e) => {
+  $checkbox.checked = false;
+  // setting checked to false won't trigger 'change'
+  // event, manually dispatch an event to rotate
+  // dropdown arrow icon
+  $checkbox.dispatchEvent(new Event('change'));
+});
