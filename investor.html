@@ -34,40 +34,41 @@
   </head>
   <body>
     <header>
-      <div class="header container">
-        <a href="index.html" class="logo">
-          <img src="./assets/img/logo.svg" alt="" />
-        </a>
+      <div class="container">
+        <div class="header">
+          <a href="index.html" class="logo">
+            <img class="logo_1" src="./assets/img/logo.svg" alt="" />
+            <img class="logo_2" src="./assets/img/logo_1.svg" alt="" />
+          </a>
+          <nav class="nav">
+            <a href="about.html" class="nav__item">О нас</a>
+            <a href="solution.html" class="nav__item">Решения</a>
+            <a href="products.html" class="nav__item">Продукция</a>
+            <a href="service.html" class="nav__item">Сервисный центр</a>
+            <a href="investor.html" class="nav__item active">Для инвесторов</a>
+            <a href="#" id="myBtn" class="nav__item">Контакты</a>
+          </nav>
 
-        <nav class="nav">
-          <a href="about.html" class="nav__item">О нас</a>
-          <a href="solution.html" class="nav__item">Решения</a>
-          <a href="products.html" class="nav__item">Продукция</a>
-          <a href="service.html" class="nav__item">Сервисный центр</a>
-          <a href="investor.html" class="nav__item active">Для инвесторов</a>
-          <a href="#" id="myBtn" class="nav__item">Контакты</a>
-        </nav>
-
-        <div class="menu__button">
-          <div class="select__wrap">
-            <select
-              class="custom__select"
-              id="select"
-              name="select"
-              placeholder="Ru"
-            >
-              <option value="option1">Ru</option>
-              <option value="option2">En</option>
-              <option value="option3">Uz</option>
-            </select>
-          </div>
-          <div class="menu">
-            <a class="nav__toggle" id="nav__toggle" type="button">
-              <span class="nav__toggle-item">menu</span>
-            </a>
+          <div class="menu__button">
+            <div class="select__wrap">
+              <select
+                class="custom__select"
+                id="select"
+                name="select"
+                placeholder="Ru"
+              >
+                <option value="option1">Ru</option>
+                <option value="option2">En</option>
+                <option value="option3">Uz</option>
+              </select>
+            </div>
+            <div class="menu">
+              <a class="nav__toggle" id="nav__toggle" type="button">
+                <span class="nav__toggle-item">menu</span>
+              </a>
+            </div>
           </div>
         </div>
-        
       </div>
     </header>
 
@@ -80,7 +81,7 @@
         <a href="investor.html" class="nav__item__m">Для инвесторов</a>
         <a href="#" class="nav__item__m">Контакты</a>
 
-                <div class="modal__info">
+        <div class="modal__info">
           <div class="modal__phone">
             <a href="tel:+99 788 00 30">99 788 00 30</a> |
             <a href="tel: 55 500 99 90">55 500 99 90</a>
@@ -93,7 +94,6 @@
         <div class="modal__card">
           <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A7285a23c84cf8c7f9230f77359e88bcfcfd2611703a207d26188e5174f6ac6bb&amp;source=constructor"
-
             frameborder="0"
           ></iframe>
         </div>
@@ -119,7 +119,7 @@
             /></a>
           </div>
         </div>
-        </nav>
+      </nav>
     </div>
 
     <section>
@@ -139,16 +139,14 @@
               <div class="investor_text">Лет опыта работы с клиентами</div>
             </div>
           </div>
-          
+
           <a class="investor_btn" href="#">
             Связаться с нами
             <i class="fa-solid fa-chevron-right"></i>
           </a>
-
         </div>
       </div>
     </section>
-
 
     <section class="nature">
       <div class="">
@@ -326,7 +324,6 @@
       </div>
     </footer>
 
-
     <div id="myModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
@@ -345,7 +342,6 @@
         <div class="modal__card">
           <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A7285a23c84cf8c7f9230f77359e88bcfcfd2611703a207d26188e5174f6ac6bb&amp;source=constructor"
-
             frameborder="0"
           ></iframe>
         </div>
@@ -371,9 +367,6 @@
             /></a>
           </div>
         </div>
-          
-
-        
       </div>
     </div>
 
@@ -399,7 +392,6 @@
         }
       };
     </script>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

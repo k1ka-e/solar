@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
   },
@@ -19,7 +19,7 @@ $(function () {
 
 function openTab(evt, tabName) {
   // Declare all variables
-  var i, tabcontent, tablinks, tablinks__radius1, tablinks__sircle;
+  let i, tabcontent, tablinks, tablinks__radius1, tablinks__sircle;
 
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -55,43 +55,59 @@ function openTab(evt, tabName) {
 
 //slider2
 
-$(".slider-for").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: ".slider-nav",
-});
-$(".slider-nav").slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: ".slider-for",
-  dots: true,
-  focusOnSelect: true,
-});
-
-$("a[data-slide]").click(function (e) {
-  e.preventDefault();
-  var slideno = $(this).data("slide");
-  $(".slider-nav").slick("slickGoTo", slideno - 1);
-});
-
-
-
 ////////////////////////////////////
 
-const $drowdownArrow = document.querySelector('.fa-angle-down');
-const $checkbox = document.getElementById('openDropdown');
-const $dropdownMenu = document.querySelector('.dropdown-menu');
+const $drowdownArrow = document.querySelector(".fa-angle-down");
+const $checkbox = document.getElementById("openDropdown");
+const $dropdownMenu = document.querySelector(".dropdown-menu");
 
-$checkbox.addEventListener('change', () => {
-  $drowdownArrow.classList.toggle('rotate-dropdown-arrow');
+if ($checkbox !== null) {
+  $checkbox.addEventListener("change", () => {
+    $drowdownArrow.classList.toggle("rotate-dropdown-arrow");
+  });
+} 
+
+if ($dropdownMenu !== null ) {
+  $dropdownMenu.addEventListener("click", (e) => {
+    $checkbox.checked = false;
+    // setting checked to false won't trigger 'change'
+    // event, manually dispatch an event to rotate
+    // dropdown arrow icon
+    $checkbox.dispatchEvent(new Event("change"));
+  });
+
+} 
+
+
+$(document).ready(function () {
+  $(".collapse.in").prev(".panel-heading").addClass("active");
+  $("#accordion, #bs-collapse")
+    .on("show.bs.collapse", function (a) {
+      $(a.target).prev(".panel-heading").addClass("active");
+    })
+    .on("hide.bs.collapse", function (a) {
+      $(a.target).prev(".panel-heading").removeClass("active");
+    });
 });
 
-$dropdownMenu.addEventListener('click', (e) => {
-  $checkbox.checked = false;
-  // setting checked to false won't trigger 'change'
-  // event, manually dispatch an event to rotate
-  // dropdown arrow icon
-  $checkbox.dispatchEvent(new Event('change'));
-});
+/* modal window */
+let modalWindow = document.getElementById("myModal");
+
+let modalBtn = document.getElementById("myBtn");
+
+let modalSpan = document.getElementsByClassName("close")[0];
+
+
+modalBtn.onclick = function () {
+  modalWindow.style.display = "block";
+};
+
+modalSpan.onclick = function () {
+  modalWindow.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modalWindow) {
+    modalWindow.style.display = "none";
+  }
+};
